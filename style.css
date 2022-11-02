@@ -1,0 +1,12 @@
+a{
+    text-decoration: none;
+    color: cadetblue;            
+}
+
+a:hover{
+    color: black;
+}
+
+.active{
+    background-color: gainsboro;
+}
