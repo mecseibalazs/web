@@ -42,3 +42,13 @@ img:hover{
 p{
   text-align: center;
 }
+
+.footer {
+  left: 0;
+  bottom: 0;
+  background-color: red;
+  color: gold;
+  width: 400px;
+  position: fixed;
+  text-align: center;
+}
