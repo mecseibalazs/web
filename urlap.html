@@ -15,56 +15,97 @@
     <title>Űrlap</title>
 </head>
 <body>
+   <style>
+   * {
+     box-sizing: border-box;
+   }
+   
+   .menu {
+     float: left;
+     width: 20%;
+     text-align: center;
+   }
+   
+   .menu a {
+     background-color: #99ff33;
+     padding: 8px;
+     margin-top: 7px;
+     display: block;
+     width: 100%;
+     color: black;
+   }
+   
+   .main {
+     float: left;
+     width: 60%;
+     padding: 0 20px;
+   }
+   
+   .right {
+     background-color: #99ff33;
+     float: left;
+     width: 20%;
+     padding: 15px;
+     margin-top: 7px;
+     text-align: center;
+   }
+   
+   </style>
+   </head>
+   <body style="font-family:Verdana;color: black;">
+   
+   <div style="background-color:#99ff33;padding:15px;text-align:center;">
+     <h1>Pékség</h1>
+   </div>
+   
+   <div style="overflow:auto">
+     <div class="menu">
+      <a href="index.html">Főoldal</a>
+       <a href="keplink.html">Képlink</a>
+       <a href="lista.html">Lista</a>
+       <a href="tablazat.html">Táblázat</a>
+       <a href="urlap.html">Űrlap</a>
+       <a href="evszakok.html">Évszakok</a>
+     </div>
+   
+     <div class="main">
+      <form name="urlap">
 
-   <ul>
-      <li><a class="active" href="index.html">Főoldal</a></li>
-      <li><a href="keplink.html">Keplink</a></li>
-      <li><a href="lista.html">Lista</a></li>
-      <li><a href="urlap.html">Űrlap</a></li>
-      <li><a href="tablazat.html">Táblázat</a></li>
-      <li><a href="evszakok.html">Évszakok</a></li>
-    </ul>
-
-    <br><br>
-
-    <h1>Űrlap feladat</h1>
-    <img src="img/finompizza.jpg" alt="pizza" width="400px">
-    <br><br><br>
-    
-    <form name="urlap">
-
-        <legend>Adatok:</legend>
-        <p>
-        <label>Telefonszám: <input type="text" name="nev"></label>
-        </p>
+         <legend>Adatok:</legend>
          <p>
-            <label>Név: <input type="text" name="telefonszam"></label>
+         <label>Telefonszám: <input type="text" name="nev"></label>
          </p>
-         <p>
-            <label>Szállítási cím:<input type="text" name="cim"></label>
-         </p>
-         <legend>Méret:</legend>
-         <p>
-            <label> <input type="radio" name="meret"> kicsi <input type="radio" name="meret"> közepes <input type="radio" name="meret" name="meret"> nagy </label>
-         </p>
-         <legend>Feltétek:</legend>
-         <p>
-            <label><input type="checkbox" name="feltetek"> szalámi <input type="checkbox" name="feltetek"> kukorica <br><br> Kívánság feltét: <input type="text" name="feltetek"></label>
-         </p>
-         <legend>Mennyiség:</legend>
-         <p>
-         </p>
-         <p>
-            <label><input type="number"> db </label>
-         </p>
-         <input type='submit'>
-    </form>
-
-    <footer>
-      <div class="footer">
-          <p>Kalahári ©</p>
-      </div>
-      </footer>
-
-</body>
-</html>
+          <p>
+             <label>Név: <input type="text" name="telefonszam"></label>
+          </p>
+          <p>
+             <label>Szállítási cím:<input type="text" name="cim"></label>
+          </p>
+          <legend>Méret:</legend>
+          <p>
+             <label> <input type="radio" name="meret"> kicsi <input type="radio" name="meret"> közepes <input type="radio" name="meret" name="meret"> nagy </label>
+          </p>
+          <legend>Feltétek:</legend>
+          <p>
+             <label><input type="checkbox" name="feltetek"> szalámi <input type="checkbox" name="feltetek"> kukorica <br><br> Kívánság feltét: <input type="text" name="feltetek"></label>
+          </p>
+          <legend>Mennyiség:</legend>
+          <p>
+          </p>
+          <p>
+             <label><input type="number"> db </label>
+          </p>
+          <input type='submit'>
+     </form>
+     </div>
+   
+     <div class="right">
+       <img src="img/kollazs.jpg" alt="Kollázs kép">
+       <p style="color: black;">Balázsnak hívnak.15 éves vagyok, a kedvenc hobbim a foci.Szeretem az IKT-t.</p>
+     </div>
+   </div>
+   
+   <div style="background-color:#99ff33;text-align:center;padding:10px;margin-top:7px;">© copyright</div>
+   
+   </body>
+   </html>

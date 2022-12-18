@@ -27,105 +27,158 @@ table,tr,th,td
 
 </head>
 <body>
-
-    <ul>
-        <li><a class="active" href="index.html">Főoldal</a></li>
-        <li><a href="keplink.html">Keplink</a></li>
-        <li><a href="lista.html">Lista</a></li>
-        <li><a href="urlap.html">Űrlap</a></li>
-        <li><a href="tablazat.html">Táblázat</a></li>
-        <li><a href="evszakok.html">Évszakok</a></li>
-      </ul>
+    <style>
+    * {
+      box-sizing: border-box;
+    }
     
-<table>
-    <caption>9.A ÓRAREND</caption>
-    <tr>
-        <th>ÓRA</th>
-        <th>HÉTFŐ</th>
-        <th>KEDD</th>
-        <th>SZERDA</th>
-        <th>CSÜTÖRTÖK</th>
-        <th>PÉNTEK</th>
-    </tr>
-    <tr>
-        <td>0.óra (7:15-8:00)</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>Informatika és távközlés</td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>1.óra (8:00-8:45)</td>
-        <td>Irodalom</td>
-        <td>Matek</td>
-        <td>Irodalom</td>
-        <td>Informatika és távközlés</td>
-        <td>Nyelvtan</td>
-    </tr>
-    <tr>
-        <td>2.óra (8:55-9:40)</td>
-        <td>Angol</td>
-        <td>Nyelvtan</td>
-        <td>Irodalom</td>
-        <td>Informatika és távközlés</td>
-        <td>Digitális kultúra</td>
-    </tr>
-    <tr>
-        <td>3.óra (9:50-10:35)</td>
-        <td>Munkavállalói ismeretek</td>
-        <td>Matek</td>
-        <td>Komplex természettudomány</td>
-        <td>Angol</td>
-        <td>Digitális kultúra</td>
-    </tr>
-    <tr>
-        <td>4.óra (10:45-11:30)</td>
-        <td>Osztályfőnöki</td>
-        <td>Történelem</td>
-        <td>Angol</td>
-        <td>Matek</td>
-        <td>Tesi</td>
-    </tr>
-    <tr>
-        <td>5.óra (11:40-12:25)</td>
-        <td>Történelem</td>
-        <td>Komplex természettudomány</td>
-        <td>IKT projektmunka</td>
-        <td>Történelem</td>
-        <td>Programozási alapok</td>
-    </tr>
-    <tr>
-        <td>6.óra (12:45-13:30)</td>
-        <td>Matek</td>
-        <td>Tesi</td>
-        <td>Matek</td>
-        <td>Komplex természettudomány</td>
-        <td>Programozási alapok</td>
-    </tr>
-    <tr>
-        <td>7.óra (13:35-14:20)</td>
-        <td></td>
-        <td>Angol</td>
-        <td>Tesi</td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td>8.óra (14:25-15:10)</td>
-        <td></td>
-        <td></td>
-        <td>Tesi</td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
-
-<footer>
-    <div class="footer">
-        <p>Kalahári ©</p>
+    .menu {
+      float: left;
+      width: 20%;
+      text-align: center;
+    }
+    
+    .menu a {
+      background-color: #99ff33;
+      padding: 8px;
+      margin-top: 7px;
+      display: block;
+      width: 100%;
+      color: black;
+    }
+    
+    .main {
+      float: left;
+      width: 60%;
+      padding: 0 20px;
+    }
+    
+    .right {
+      background-color: #99ff33;
+      float: left;
+      width: 20%;
+      padding: 15px;
+      margin-top: 7px;
+      text-align: center;
+    }
+    
+    </style>
+    </head>
+    <body style="font-family:Verdana;color: black;">
+    
+    <div style="background-color:#99ff33;padding:15px;text-align:center;">
+      <h1>Pékség</h1>
     </div>
-    </footer>
-
-</body>
-</html>
+    
+    <div style="overflow:auto">
+      <div class="menu">
+        <a href="index.html">Főoldal</a>
+        <a href="keplink.html">Képlink</a>
+        <a href="lista.html">Lista</a>
+        <a href="tablazat.html">Táblázat</a>
+        <a href="urlap.html">Űrlap</a>
+        <a href="evszakok.html">Évszakok</a>
+      </div>
+    
+      <div class="main">
+        <h1>9.A Órarend</h1>
+        <table>
+    
+            <tr>
+                <th>Óra</th>
+                <th>Hétfő</th>
+                <th>Kedd</th>
+                <th>Szerda</th>
+                <th>Csürtök</th>
+                <th>Péntek</th>
+            </tr>
+            <tr>
+                <td>0.óra (7.15-8.00)</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Informatika és távközlés</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>1.óra (8.00-8.45)</td>
+                <td>Magyar nyelv és irodalom</td>
+                <td>Matematika(komp)</td>
+                <td>Magyar nyelv és irodalom</td>
+                <td>Informatika és távközlés</td>
+                <td>Magyar nyelv és irodalom</td>
+            </tr>
+            <tr>
+                <td>2.óra (8.55-9.40)</td>
+                <td>Angol nyelv</td>
+                <td>Magyar nyelv és irodalom</td>
+                <td>Magyar nyelv és irodalom</td>
+                <td>Informatika és távközlés</td>
+                <td>Digitális kultúra</td>
+            </tr>
+            <tr>
+                <td>3.óra (9.50-10.35)</td>
+                <td>Munkavállalói ismeretek</td>
+                <td>Matematika</td>
+                <td>Komplex természettudomány</td>
+                <td>Angol nyelv</td>
+                <td>Digitális kultúra</td>
+            </tr>
+            <tr>
+                <td>4.óra (10.45-11-30)</td>
+                <td>Osztályfőnöki</td>
+                <td>Történelem</td>
+                <td>Angol nyelv</td>
+                <td>Matematika</td>
+                <td>Testnevelés</td>
+            </tr>
+            <tr>
+                <td>5.óra (11.40-12.25)</td>
+                <td>Történelem</td>
+                <td>Komplex természettudomány</td>
+                <td>IKT projektmunka</td>
+                <td>Történelem</td>
+                <td>Programozási alapok</td>
+            </tr>
+            <tr>
+                <td>6.óra (12.45-13.30)</td>
+                <td>Matematika</td>
+                <td>Testnevelés</td>
+                <td>Matematika</td>
+                <td>Komplex természettudomány</td>
+                <td>Programozási alapok</td>
+            </tr>
+            <tr>
+                <td>7.óra (13.35-14.20)</td>
+                <td></td>
+                <td>Angol nyelv</td>
+                <td>Testnevelés</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8.óra (14.25-15.10)</td>
+                <td></td>
+                <td></td>
+                <td>Testnevelés</td>
+                <td></td>
+                <td></td>
+            </tr>
+         
+    
+    
+    
+    
+        </table>
+      </div>
+    
+      <div class="right">
+        <img src="img/kollazs.jpg" alt="Kollázs kép">
+        <p style="color: black;">Balázsnak hívnak.15 éves vagyok, a kedvenc hobbim a foci.Szeretem az IKT-t.</p>
+      </div>
+    </div>
+    
+    <div style="background-color:#99ff33;text-align:center;padding:10px;margin-top:7px;">© copyright</div>
+    
+    </body>
+    </html>

@@ -15,39 +15,76 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    <ul>
-        <li><a class="active" href="index.html">Főoldal</a></li>
-        <li><a href="keplink.html">Keplink</a></li>
-        <li><a href="lista.html">Lista</a></li>
-        <li><a href="urlap.html">Űrlap</a></li>
-        <li><a href="tablazat.html">Táblázat</a></li>
-        <li><a href="evszakok.html">Évszakok</a></li>
-      </ul>
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
 
+.menu a {
+  background-color: #99ff33;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: black;
+}
 
-    <h1>Mecsei Balázs</h1>
-    <h2>Mecsei Balázs</h2>
-    <h3>Mecsei Balázs</h3>
-    <h4>Mecsei Balázs</h4>
-    <h5>Mecsei Balázs</h5>
-    <h6>Mecsei Balázs</h6>
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
 
+.right {
+  background-color: #99ff33;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
 
-    <p>blablablablabla
-        Haaaaaaaaaaú
-        mehehe
-        meee
-    </p>
+</style>
+</head>
+<body style="font-family:Verdana;color: black;">
 
-    <img src="img/kollazs.jpg" alt="Egy bajszos ember látható" title="Bajszos Ember" width="400">
+<div style="background-color:#99ff33;padding:15px;text-align:center;">
+  <h1>Pékség</h1>
+</div>
 
-    <footer>
-        <div class="footer">
-            <p>Kalahári ©</p>
-        </div>
-        </footer>
+<div style="overflow:auto">
+  <div class="menu">
+    <a href="index.html">Főoldal</a>
+    <a href="keplink.html">Képlink</a>
+    <a href="lista.html">Lista</a>
+    <a href="tablazat.html">Táblázat</a>
+    <a href="urlap.html">Űrlap</a>
+    <a href="evszakok.html">Évszakok</a>
+  </div>
 
+  <div class="main">
+    <h2 style="color: green;">Nevem h1-h6 ig kiírva</h2>
+    <h1 style="color:brown">Mecsei Balázs</h1>
+    <h2 style="color: deeppink;">Mecsei Balázs</h2>
+    <h3 style="color: peru;">Mecsei Balázs</h3>
+    <h4 style="color: crimson;">Mecsei Balázs</h4>
+    <h5 style="color:forestgreen;">Mecsei Balázs</h5>
+    <h6 style="color: pink;">Mecsei Balázs</h6>
+  </div>
+
+  <div class="right">
+    <img src="img/kollazs.jpg" alt="Kollázs kép">
+    <p style="color: black;">Balázsnak hívnak.15 éves vagyok, a kedvenc hobbim a foci.Szeretem az IKT-t.</p>
+  </div>
+</div>
+
+<div style="background-color:#99ff33;text-align:center;padding:10px;margin-top:7px;">© copyright</div>
 
 </body>
 </html>
