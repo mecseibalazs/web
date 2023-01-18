@@ -70,13 +70,40 @@
   </div>
 
   <div class="main">
-    <h2 style="color: green;">Nevem h1-h6 ig kiírva</h2>
-    <h1 style="color:brown">Mecsei Balázs</h1>
-    <h2 style="color: deeppink;">Mecsei Balázs</h2>
-    <h3 style="color: peru;">Mecsei Balázs</h3>
-    <h4 style="color: crimson;">Mecsei Balázs</h4>
-    <h5 style="color:forestgreen;">Mecsei Balázs</h5>
-    <h6 style="color: pink;">Mecsei Balázs</h6>
+    <fieldset>
+        <br>
+        <legend>Négy alapművelettel számológép</legend>
+        <form action="javascript:void(0)">
+            <input type="number" name="szam" id="a" placeholder="szam1">
+            <input type="number" name="szam" id="b" placeholder="szam2">
+            <input type="text" name="szam" id="c" placeholder="eredmény" readonly>
+            <br><br>
+            <input type="button" value="+" onclick="ad()">
+            <input type="button" value="-" onclick="kiv()">
+            <input type="button" value="*" onclick="szor()">
+            <input type="button" value="/" onclick="oszt()">
+
+    </fieldset>
+    </form>
+
+
+    <script>
+        function ad() {
+            c.value = Number(a.value) + Number(b.value)
+        }
+
+        function kiv() {
+            c.value = Number(a.value) - Number(b.value)
+        }
+
+        function szor() {
+            c.value = Number(a.value) * Number(b.value)
+        }
+
+        function oszt() {
+            c.value = Number(a.value) / Number(b.value)
+        }
+    </script>
   </div>
 
   <div class="right">
