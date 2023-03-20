@@ -1,93 +1,159 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="hu">
 <head>
-  <meta charset="UTF-8">
-  <title>Pitagorasz-tétel</title>
-
-  <style>
-    .triangle {
-      width: 0;
-      height: 0;
-      border-bottom: 0 solid transparent;
-      border-right: 0 solid black;
-      border-top: 0 solid black;
-      border-left: 0 solid black;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pitagorasz</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
-  <canvas id="canvas" width="500" height="500"></canvas>
-
-
-  <br>
-  <h1>Pitagorasz tétel</h1>
-  <form action="javascript:void(0)">
-    <label for="a">A oldal hossza:</label>
-    <input type="number" id="aoldal">
-    <label for="a">B oldal hossza:</label>
-    <input type="number" id="boldal">
-    <label for="a">C oldal hossza:</label>
-    <input type="number" id="coldal">
-    <br>
-    <input value="számolás" type="button" onclick="pita()">
-    <input value="reset" type="reset">
-    <input value="rajzolás" type="button" onclick="rajzol()">
-
-  
-
-   
-
-
-  </form>
-</body>
-<script>
-  function pita() {
-    var aoldal1 = parseFloat(document.getElementById("aoldal").value);
-    var boldal1 = parseFloat(document.getElementById("boldal").value);
-    var coldal1 = parseFloat(document.getElementById("coldal").value);
+    <style>
+    * {
+      box-sizing: border-box;
+    }
     
-
-    if (isNaN(coldal1)) {
-      coldal1 = Math.sqrt(Math.pow(aoldal1, 2) + Math.pow(boldal1, 2));
-      document.getElementById("coldal").value = coldal1;
+    .menu {
+      float: left;
+      width: 20%;
+      text-align: center;
     }
-    else if (isNaN(aoldal1)) {
-      aoldal1 = Math.sqrt(Math.pow(coldal1, 2) - Math.pow(boldal1, 2));
-      document.getElementById("aoldal").value = aoldal1;
+    
+    .menu a {
+      background-color: #99ff33;
+      padding: 8px;
+      margin-top: 7px;
+      display: block;
+      width: 100%;
+      color: black;
     }
-    else if (isNaN(boldal1)) {
-      boldal1 = Math.sqrt(Math.pow(coldal1, 2) - Math.pow(aoldal1, 2));
-      document.getElementById("boldal").value = boldal1;
+    
+    .main {
+      float: left;
+      width: 60%;
+      padding: 0 20px;
     }
-  }
-  function rajzol() {
-  // oldalak hosszának lekérése
-  var a = parseFloat(document.getElementById("aoldal").value);
-  var b = parseFloat(document.getElementById("boldal").value);
-  var c = parseFloat(document.getElementById("coldal").value);
-
-  // canvas elem kiválasztása
-  var canvas = document.getElementById("canvas");
-
-  // rajzoló felület lekérése
-  var ctx = canvas.getContext("2d");
-
-  // háromszög kirajzolása
-  ctx.clearRect(0, 0, canvas.width, canvas.height); // előző rajzolás törlése
-  ctx.beginPath();
-  ctx.moveTo(50, 50);
-  ctx.lineTo(50, 50 + a);
-  ctx.lineTo(50 + b, 50 + a);
-  ctx.lineTo(50, 50);
-  ctx.stroke();
-}
-
-//Hajdu Balazsom keszitette,lopta.Keves hozzajarulast enis hozzaraktam
-
-
-</script>
-
-</html>
+    
+    .right {
+      background-color: #99ff33;
+      float: left;
+      width: 20%;
+      padding: 15px;
+      margin-top: 7px;
+      text-align: center;
+    }
+    
+    </style>
+    </head>
+    <body style="font-family:Verdana;color: black;">
+    
+    <div style="background-color:#99ff33;padding:15px;text-align:center;">
+      <h1>Pékség</h1>
+    </div>
+    
+    <div style="overflow:auto">
+      <div class="menu">
+        <a href="index.html">Főoldal</a>
+        <a href="keplink.html">Képlink</a>
+        <a href="lista.html">Lista</a>
+        <a href="tablazat.html">Táblázat</a>
+        <a href="urlap.html">Űrlap</a>
+        <a href="evszakok.html">Évszakok</a>
+        <a href="szamologep.html">Számológép</a>
+        <a href="pita.html">Pita</a>
+      </div>
+    
+      <!DOCTYPE html>
+      <html>
+      
+      <head>
+        <meta charset="UTF-8">
+        <title>Pitagorasz-tétel</title>
+      
+        <style>
+          .triangle {
+            width: 0;
+            height: 0;
+            border-bottom: 0 solid transparent;
+            border-right: 0 solid black;
+            border-top: 0 solid black;
+            border-left: 0 solid black;
+          }
+        </style>
+      </head>
+      
+      <body>
+        <canvas id="canvas" width="500" height="500"></canvas>
+      
+      
+        <br>
+        <h1>Pitagorasz tétel</h1>
+        <form action="javascript:void(0)">
+          <label for="a">A oldal hossza:</label>
+          <input type="number" id="aoldal">
+          <label for="a">B oldal hossza:</label>
+          <input type="number" id="boldal">
+          <label for="a">C oldal hossza:</label>
+          <input type="number" id="coldal">
+          <br>
+          <input value="számolás" type="button" onclick="pita()">
+          <input value="reset" type="reset">
+          <input value="rajzolás" type="button" onclick="rajzol()">
+        </form>
+      </body>
+      <script>
+        function pita() {
+          var aoldal1 = parseFloat(document.getElementById("aoldal").value);
+          var boldal1 = parseFloat(document.getElementById("boldal").value);
+          var coldal1 = parseFloat(document.getElementById("coldal").value);
+          
+      
+          if (isNaN(coldal1)) {
+            coldal1 = Math.sqrt(Math.pow(aoldal1, 2) + Math.pow(boldal1, 2));
+            document.getElementById("coldal").value = coldal1;
+          }
+          else if (isNaN(aoldal1)) {
+            aoldal1 = Math.sqrt(Math.pow(coldal1, 2) - Math.pow(boldal1, 2));
+            document.getElementById("aoldal").value = aoldal1;
+          }
+          else if (isNaN(boldal1)) {
+            boldal1 = Math.sqrt(Math.pow(coldal1, 2) - Math.pow(aoldal1, 2));
+            document.getElementById("boldal").value = boldal1;
+          }
+        }
+        function rajzol() {
+        // oldalak hosszának lekérése
+        var a = parseFloat(document.getElementById("aoldal").value);
+        var b = parseFloat(document.getElementById("boldal").value);
+        var c = parseFloat(document.getElementById("coldal").value);
+      
+        // canvas elem kiválasztása
+        var canvas = document.getElementById("canvas");
+      
+        // rajzoló felület lekérése
+        var ctx = canvas.getContext("2d");
+      
+        // háromszög kirajzolása
+        ctx.clearRect(0, 0, canvas.width, canvas.height); // előző rajzolás törlése
+        ctx.beginPath();
+        ctx.moveTo(50, 50);
+        ctx.lineTo(50, 50 + a);
+        ctx.lineTo(50 + b, 50 + a);
+        ctx.lineTo(50, 50);
+        ctx.stroke();
+      }
+      
+      //Hajdu Balazsom keszitette,lopta.Keves hozzajarulast enis hozzaraktam
+     
+      </script>
+    <div style="background-color:#99ff33;text-align:center;padding:10px;margin-top:7px;">© copyright</div>
+    
+    </body>
+    </html>
